@@ -1,0 +1,21 @@
+{
+  "name": "tmiot-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "waliyun": "~3.2.2",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "mqtt": "~2.18.8",
+    "express": "~4.16.0",
+    "express-oauth-server": "^2.0.0",
+    "http-errors": "~1.6.2",
+    "ejs": "~2.4.1",
+    "serve-favicon": "~2.3.0",
+    "morgan": "~1.9.0"
+  }
+}
