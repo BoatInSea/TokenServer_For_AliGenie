@@ -15,13 +15,9 @@ function loadUser(req) {
 /* GET users listing. */
 router.post('/authorize', oauth.authorize({
     authenticateHandler: {
-    handle: loadUser }
-    //handle: loadCurrentUser }
+    //handle: loadUser }
+    handle: loadCurrentUser }
 }));
-//router.post('/authorize', oauth.authorize({
-//    authenticateHandler: {
-//    handle: loadCurrentUser }
-//}));
 router.post('/token', oauth.token());
 router.use('/securedata', oauth.authenticate(), function(req, response, err){
    console.log(req.body);
